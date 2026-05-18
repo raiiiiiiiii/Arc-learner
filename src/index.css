@@ -368,15 +368,16 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="none" stroke="%23e2e8f0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hexagon"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>');
+  width: 420px;
+  height: 420px;
+  background-image: url('/logo.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  opacity: 0.5;
+  opacity: 0.05;
   z-index: 0;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 .certificate-content {

@@ -31,8 +31,8 @@ const lessonData = {
       </>
     ),
     resources: [
-      { label: 'Official Arc Website', url: 'https://www.arc.io/' },
-      { label: 'Official Arc Documentation', url: 'https://docs.arc.io/' }
+      { label: 'Arc Core Specifications', url: 'https://docs.arc.io/' },
+      { label: 'Ecosystem Directory', url: 'https://www.arc.io/ecosystem' }
     ]
   },
   'stablecoin-native-l1': {
@@ -63,8 +63,8 @@ const lessonData = {
       </>
     ),
     resources: [
-      { label: 'Arc Ecosystem Overview', url: 'https://www.arc.io/ecosystem' },
-      { label: 'Arc Gas Mechanics', url: 'https://docs.arc.io/' }
+      { label: 'Circle Stack Gas Mechanics', url: 'https://docs.arc.io/' },
+      { label: 'Arc Economic Architecture', url: 'https://www.arc.io/' }
     ]
   },
   'performance-finality-evm': {
@@ -93,8 +93,8 @@ const lessonData = {
       </>
     ),
     resources: [
-      { label: 'Arc Developer Docs', url: 'https://docs.arc.io/' },
-      { label: 'Consensus Technical Specs', url: 'https://docs.arc.io/' }
+      { label: 'Connect to Arc RPC Reference', url: 'https://docs.arc.io/arc/references/connect-to-arc' },
+      { label: 'BFT consensus Specs', url: 'https://docs.arc.io/' }
     ]
   },
   'arc-app-kit': {
@@ -113,9 +113,9 @@ const lessonData = {
 
         <h3>Core Features of the Arc App Kit</h3>
         <ul>
-          <li><strong>Pre-built Connectors:</strong> Polished, multi-wallet connect widgets that handle network-switching automatically.</li>
+          <li><strong>Pre-built Connectors:</strong> Polished, multi-wallet connect widgets that handle RPC network-switching automatically.</li>
           <li><strong>Transaction Status Loaders:</strong> Interactive, user-friendly modals that guide users through transaction approval, pending states, and instant finality confirmations.</li>
-          <li><strong>Native Gas Estimation:</strong> Accurate, real-time USDC fee displays built into payment buttons, ensuring full transparent pricing for users.</li>
+          <li><strong>Native Gas Estimation:</strong> Accurate, real-time USDC fee displays built into payment buttons, ensuring transparent pricing for users.</li>
         </ul>
         <p>
           With the Arc App Kit, developers can build a fully functional, stablecoin-powered payment dApp in just an afternoon instead of weeks of custom UI engineering.
@@ -123,8 +123,8 @@ const lessonData = {
       </>
     ),
     resources: [
-      { label: 'Arc App Kit SDK', url: 'https://docs.arc.io/' },
-      { label: 'Developer Quickstart Guide', url: 'https://docs.arc.io/' }
+      { label: 'dApp Connection & RPC Guide', url: 'https://docs.arc.io/arc/references/connect-to-arc' },
+      { label: 'Arc App Kit UI Reference', url: 'https://docs.arc.io/' }
     ]
   },
   'ecosystem-use-cases': {
@@ -156,7 +156,7 @@ const lessonData = {
     ),
     resources: [
       { label: 'Arc Ecosystem Directory', url: 'https://www.arc.io/ecosystem' },
-      { label: 'Micropayment Architectures', url: 'https://docs.arc.io/' }
+      { label: 'Stablecoin Payment Guides', url: 'https://docs.arc.io/' }
     ]
   },
   'future-onchain-finance': {
@@ -188,8 +188,8 @@ const lessonData = {
       </>
     ),
     resources: [
-      { label: 'Arc Vision Paper', url: 'https://www.arc.io/' },
-      { label: 'Institutional Infrastructure', url: 'https://docs.arc.io/' }
+      { label: 'Arc L1 Governance Overview', url: 'https://www.arc.io/' },
+      { label: 'Enterprise Web3 Solutions', url: 'https://docs.arc.io/' }
     ]
   }
 };
