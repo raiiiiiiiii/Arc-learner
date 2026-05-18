@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, Star, Award, CheckCircle, Circle, ArrowRight, Lightbulb } from 'lucide-react';
+import { BookOpen, Star, Award, CheckCircle, Circle, ArrowRight, Lightbulb, Lock } from 'lucide-react';
 
 const lessons = [
   { id: 'what-is-arc', title: 'Introduction to Arc: The Economic OS' },
@@ -82,7 +82,7 @@ function Dashboard() {
       </p>
 
       {/* Progress Cards */}
-      <div className="stats-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)', gap: '24px', marginBottom: '32px' }}>
+      <div className="stats-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '24px', marginBottom: '32px' }}>
         <div className="stat-card" style={{ padding: '24px' }}>
           <BookOpen size={36} color="var(--accent-color)" style={{ margin: '0 auto 12px' }} />
           <div className="stat-value" style={{ fontSize: '2.5rem' }}>{stats.lessonsCount} / {lessons.length}</div>
@@ -92,6 +92,21 @@ function Dashboard() {
           <Star size={36} color="var(--accent-color)" style={{ margin: '0 auto 12px' }} />
           <div className="stat-value" style={{ fontSize: '2.5rem' }}>{stats.score} <span style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', fontWeight: '500' }}>/ 20</span></div>
           <div className="stat-label">Quiz High Score</div>
+        </div>
+        <div className="stat-card" style={{ padding: '24px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+          {stats.lessonsCount === lessons.length && stats.score > 0 ? (
+            <>
+              <Award size={36} color="var(--success-color)" style={{ margin: '0 auto 8px' }} />
+              <div className="stat-value" style={{ fontSize: '2.25rem', color: 'var(--success-color)' }}>UNLOCKED</div>
+              <div className="stat-label">Claim Certificate Available</div>
+            </>
+          ) : (
+            <>
+              <Lock size={36} color="var(--text-secondary)" style={{ margin: '0 auto 8px' }} />
+              <div className="stat-value" style={{ fontSize: '2.25rem', color: 'var(--text-secondary)' }}>LOCKED</div>
+              <div className="stat-label">All Lessons & Quiz Required</div>
+            </>
+          )}
         </div>
       </div>
 
