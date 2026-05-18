@@ -455,3 +455,41 @@ p {
   align-items: center;
   gap: 4px;
 }
+
+/* Lesson Content Polish */
+.lesson-content-body h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+
+.lesson-content-body p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+}
+
+.lesson-content-body ul {
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.lesson-content-body li {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+}
+
+.lesson-content-body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Table Row Hover Utility */
+.table-row-hover:hover {
+  background-color: #f9fafb;
+}
